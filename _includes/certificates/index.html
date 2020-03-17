@@ -1,0 +1,23 @@
+<div class="card-columns m-3 mt-5">
+
+  <!-- Local certificates -->
+  {% for certificate in site.certificates %}
+
+    {%- assign certificate_type  = "local" -%}
+    {%- assign certificate_id    = certificate.name | slugify -%}
+    {%- assign certificate_img   = certificate.image -%}
+    {%- assign certificate_name  = certificate.name -%}
+    {%- assign certificate_desc  = certificate.description -%}
+    {%- assign certificate_tools = certificate.tools -%}
+
+    {%- if certificate.external_url -%}
+      {%- assign certificate_url = certificate.external_url -%}
+    {%- else -%}
+      {%- assign certificate_url = certificate.url | relative_url -%}
+    {%- endif -%}
+
+    {% include certificates/certificate-card.html %}
+
+  {% endfor %}
+
+</div>

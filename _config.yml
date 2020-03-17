@@ -20,20 +20,77 @@
 
 title: Josh Levy
 email: josh.david.levy@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: >- # this means to ignore new|lines until "baseurl:"
+    Husband. Father. Reformed Baptist.
+    Student. Systems Analyst. A/V Tech. 
+    #actuallyautistic
 baseurl: "" # the subpath of your site, e.g. /blog
+repository: joshdavidlevy/joshdavidlevy.github.io
 url: "http://joshlevy.ca" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: joshlevy
-github_username:  joshdavidlevy
+
+author:
+  name              : Josh Levy
+  image             : https://avatars3.githubusercontent.com/u/416995
+# behance           : your_username
+# dribbble          : your_username
+  email             : josh.david.levy@gmail.com
+  facebook          : josh.david.levy
+  github            : joshdavidlevy
+# gitlab            : your_username
+# instagram         : your_username
+  linkedin          : joshdavidlevy
+  medium            : josh.david.levy
+# soundcloud        : your_username
+# spotify           : your_username
+  stackoverflow     : 13079329
+# tumblr            : your_username.tumblr.com
+# twitch            : your_username
+  twitter           : joshlevy
+# vimeo             : your_username
+  youtube           : UCGkEwa_YMzXiBe4ZsiRdEig
+
 
 # Build settings
-theme: minima
+#theme: portfolyou-jekyll-theme
+encoding: UTF-8
 plugins:
   - jekyll-feed
+  - jemoji
 
+
+### Posts ###
+permalink: /blog/:title
+
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+  certificates:
+    output: true
+    permalink: /certificates/:name
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+
+
+nav_exclude:                                            # The following paths are excluded from navbar
+  - pages/tags.html
+  - pages/index.md
+
+### Exclude from processing ###
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - "*.log"
+  - freeCodeCamp/
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

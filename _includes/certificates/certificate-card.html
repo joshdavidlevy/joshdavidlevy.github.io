@@ -1,0 +1,21 @@
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="{{ certificate_url }}" class="certificate card text-dark">
+    {%- if certificate_img -%}
+    <img id="{{ certificate_id }}-img" class="card-img-top" src="{{ certificate_img }}" alt="{{ certificate_name }}" />
+    {%- endif -%}
+    <div class="card-body">
+      <h5 id="{{ certificate_id }}-name" class="card-title">
+          {%- if certificate_type == "remote" -%}
+          <i class="fab fa-github" data-toggle="tooltip" data-placement="bottom" data-delay="250" title="GitHub Repository"></i> |&nbsp;
+          {%- endif -%}
+        {{ certificate_name }}
+      </h5>
+      <p id="{{ certificate_id }}-desc" class="card-text">{{ certificate_desc }}</p>
+      <p id="{{ certificate_id }}-tools" class="card-text">
+        {% for tool in certificate_tools %}
+        <span class="badge badge-pill text-primary border border-primary">{{ tool }}</span>
+        {% endfor %}
+      </p>
+    </div>
+  </a>
+</div>
