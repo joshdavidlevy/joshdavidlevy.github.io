@@ -3,7 +3,7 @@
 
 	<p class="title"><b>{{ certificate_name }}</b></p>
     {%- if certificate_img -%}
-    <img id="{{ certificate_id }}-img" class="card-img-top" src="{{ certificate_img }}" alt="{{ certificate_name }}" />
+    <p><img id="{{ certificate_id }}-img" class="card-img-top" src="{{ certificate_img }}" alt="{{ certificate_name }}" /></p>
     {%- endif -%}    
       <p id="{{ certificate_id }}-desc" class="card-text">{{ certificate_desc }}</p>
       <p id="{{ certificate_id }}-tools" class="card-text">

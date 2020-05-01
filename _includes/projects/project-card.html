@@ -1,11 +1,12 @@
 <div class="wow animated fadeIn" data-wow-delay=".15s">
   <a href="{{ project_url }}" class="nes-container is-rounded with-title text-dark card no-hover">
-    {%- if project_img -%}
-    <img id="{{ project_id }}-img" class="card-img-top" src="{{ project_img }}" alt="{{ project_name }}" />
-    {%- endif -%}
 
 	 <p class="title"><b>{{ project_name }}</b></p>
-
+	 
+    {%- if project_img -%}
+    <p><img id="{{ project_id }}-img" class="card-img-top" src="{{ project_img }}" alt="{{ project_name }}" /></p>
+    {%- endif -%}
+	
       <p id="{{ project_id }}-desc" class="card-text">{{ project_desc }}</p>
       <p id="{{ project_id }}-tools" class="card-text">
         {% for tool in project_tools %}

@@ -31,24 +31,6 @@ url: "http://joshlevy.ca" # the base hostname & protocol for your site, e.g. htt
 author:
   name              : Josh Levy
   image             : https://avatars3.githubusercontent.com/u/416995
-# behance           : your_username
-# dribbble          : your_username
-  email             : josh.david.levy@gmail.com
-  facebook          : josh.david.levy
-  github            : joshdavidlevy
-# gitlab            : your_username
-# instagram         : your_username
-  linkedin          : joshdavidlevy
-  medium            : josh.david.levy
-# soundcloud        : your_username
-# spotify           : your_username
-  stackoverflow     : 13079329
-# tumblr            : your_username.tumblr.com
-# twitch            : your_username
-  twitter           : joshlevy
-# vimeo             : your_username
-  youtube           : UCGkEwa_YMzXiBe4ZsiRdEig
-
 
 # Build settings
 #theme: portfolyou-jekyll-theme
