@@ -17,4 +17,4 @@ I am a married father of two from Nova Scotia. I'm a <a href="https://whattimeis
 {% include about/timeline.html %}
 </div>
 
-<p align="right"><small><b>Theme: </b><a href="https://youssefraafatnasry.me/portfolYOU">portfolYOU</a></small></p>
+<p align="right"><small><b>Theme based on </b><a href="https://youssefraafatnasry.me/portfolYOU">portfolYOU</a></small></p>

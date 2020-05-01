@@ -1,20 +1,38 @@
 <div class="container-fluid justify-content-center">
 
-  {%- assign unfocused_color = "6c757d" -%}
 
-  {% for account in site.author %}
+<a class="social mx-1"  href="mailto:josh.david.levy@gmail.com">
+  <i class="nes-icon gmail "></i>
+</a>
 
-    {%- assign service_name = account[0] -%}
-    {%- assign service_data = site.data.social-media[service_name] -%}
-    {%- if service_data -%}    
-    <a class="social mx-1"  href="{{ service_data.url }}{{ account[1] }}"
-       style="color: #{{ unfocused_color }}"
-       onMouseOver="this.style.color='#{{ service_data.color }}'"
-       onMouseOut="this.style.color='#{{ unfocused_color }}'">
-      <i class="{{ service_data.icon }} fa-1x"></i>
-    </a>
-    {%- endif -%}
-  
-  {% endfor %}
+<a class="social mx-1"  href="https://www.facebook.com/josh.david.levy">
+  <i class="nes-icon facebook "></i>
+</a>	
+
+<a class="social mx-1"  href="https://www.linkedin.com/in/joshdavidlevy">
+  <i class="nes-icon linkedin "></i>
+</a>
+
+<a class="social mx-1"  href="https://www.github.com/joshdavidlevy">
+  <i class="nes-icon github "></i>
+</a>
+
+<a class="social mx-1"  href="https://medium.com/@josh.david.levy">
+  <i class="nes-icon medium "></i>
+</a>
+
+<a class="social mx-1"  href="https://www.twitter.com/joshlevy">
+  <i class="nes-icon twitter "></i>
+</a>
+
+<a class="social mx-1"  href="https://www.youtube.com/UCGkEwa_YMzXiBe4ZsiRdEig">
+  <i class="nes-icon youtube "></i>
+</a>
+
+
+
+
+
+
 
 </div>
