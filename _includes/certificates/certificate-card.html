@@ -1,15 +1,30 @@
 <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="{{ certificate_url }}" class="nes-container is-rounded with-title card text-dark no-hover">
+  <a id="{{ certificate_id }}-toggle" title="Click for more info" href="#"
+      onclick='$("#{{ certificate_id }}-desc").toggle(); return false;'
+      class="nes-container is-rounded with-title card text-dark no-hover" style="width: 22rem; margin:10px;">
 
-	<p class="title"><b>{{ certificate_name }}</b></p>
+    <p class="title"><b>{{ certificate_name }}</b></p>
+
     {%- if certificate_img -%}
-    <p><img id="{{ certificate_id }}-img" class="card-img-top" src="{{ certificate_img }}" alt="{{ certificate_name }}" /></p>
-    {%- endif -%}    
-      <p id="{{ certificate_id }}-desc" class="card-text">{{ certificate_desc }}</p>
+    <p>
+      <img id="{{ certificate_id }}-img" class="card-img-top" src="{{ certificate_img }}" alt="{{ certificate_name }}" />
+    </p>
+    {%- endif -%}
+      <p id="{{ certificate_id }}-desc" class="card-text" style="display:none">{{ certificate_desc }}
+
+        <button type="button" class="nes-btn is-primary" style="position: absolute; font-size: 12px; bottom: 0px; right: -4px; z-index: 1;"
+          onClick="window.open('{{ certificate_url }}')">
+          Download
+        </button>
+
+      </p>
       <p id="{{ certificate_id }}-tools" class="card-text">
         {% for tool in certificate_tools %}
         <span class="badge badge-pill text-primary border border-primary">{{ tool }}</span>
         {% endfor %}
       </p>
+
+
+
   </a>
 </div>

@@ -1,7 +1,8 @@
-<div class="card-columns m-3 mt-5">
+<div class="card-deck">
 
   <!-- Local certificates -->
-  {% for certificate in site.certificates %}
+  {% assign certificates = site.certificates | sort:"weight"  %}
+  {% for certificate in certificates %}
 
     {%- assign certificate_type  = "local" -%}
     {%- assign certificate_id    = certificate.name | slugify -%}
