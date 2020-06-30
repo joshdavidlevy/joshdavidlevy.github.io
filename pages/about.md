@@ -27,7 +27,7 @@ I am a married Christian father of two from Nova Scotia. I work as a systems ana
 <p>In 2015, I married my best friend, Mary-Jane, and became the adoptive father of her daughter, Winter-Jade. When my work offered the option of working from home, the three of us were able to move to my hometown of Parrsboro, Nova Scotia.</p>
 
 
-![2017](../media/josh2017.jpg "2015"){:height="75%" width="75%"}
+![2017](../media/josh2017.jpg "2017"){:height="75%" width="75%"}
 
 <p>In 2017, we welcomed Gwendolyn Lorah to our family.</p>
 
@@ -35,8 +35,12 @@ I am a married Christian father of two from Nova Scotia. I work as a systems ana
 ![2019](../media/josh2019.jpg "2019"){:height="75%" width="75%"}
 <p align="center"><small><a href="https://youtu.be/eFnDdfzPegM" target="_blank">My baptism</a>, summer of 2019</small></p>
 
-<p>Though I would have described myself as "religious" for most of my adult life, it wasn't until I heard my step-father's testimony one Saturday morning that I re-evaluated my <a href="https://whattimeispurple.com/discover-the-gospel/" target="_blank">relationship with Jesus</a>. Since then, I have become an active member of <a href="https://openarmsparrsboro.ca/" target="_blank">Open Arms Church</a>, serving as an A/V Technician. During the Covid-19 pandemic, I was able to help our small church produce high-quality livestreams of our Sunday services.</p>
+<p>Though I would have described myself as "religious" for most of my adult life, my so-called beliefs in no way interfered with my incredibly wretched lifestyle. It wasn't until I heard my step-father's testimony one Saturday morning that I understood my <a href="https://whattimeispurple.com/discover-the-gospel/" target="_blank">desperate need for a saviour</a>. </p>
 
-<p>I currently study computer science at <a href="https://uopeople.edu/" target="_blank">UoPeople</a>, but my real passion is for theology. After graduating, I hope to continue my formal education at seminary.</p>
+![2020](../media/josh2020.jpg "2020"){:height="75%" width="75%"}
+
+<p>After becoming a member of my local church, I began to serve as an A/V Technician. The role continually challenged my technical skills and creativity. I acquired my drone license to capture <a href="https://www.youtube.com/watch?v=kfA3k3g48NE" target="_blank">aerial videos</a> during construction of a church building. During the Covid-19 pandemic, I was able to help the small church stay connected by livestreaming Sunday services.</p>
+
+<p>I currently study computer science at <a href="https://uopeople.edu/" target="_blank">UoPeople</a>, but my real passion these days is for theology. After graduating, I hope to continue my formal education at seminary.</p>
 
 <p align="right"><small><b>Theme based on </b><a href="https://youssefraafatnasry.me/portfolYOU">portfolYOU</a></small></p>
