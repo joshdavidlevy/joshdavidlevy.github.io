@@ -1,6 +1,6 @@
 ---
-layout: default
+layout: posts
+author_profile: true
 permalink: /
----
 
-{% include landing.html %}
+---

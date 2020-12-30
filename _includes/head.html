@@ -1,22 +1,37 @@
-<head>
+<meta charset="utf-8">
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{{ site.description }}">
+{% include seo.html %}
 
-  <title>{{ site.title }}</title>
-  <link rel="shortcut icon" type="image/x-icon" href="{{ 'favicon.png' | relative_url }}">
+<link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 
-  <!-- Bootstrap CSS CDN -->
-  <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url }}" type="text/css">
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Animate CSS CDN -->
-  <link rel="stylesheet" href="{{ '/assets/css/animate.css' | relative_url }}" type="text/css">
-  
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="{{ '/assets/css/nes.min.css' | relative_url }}" type="text/css">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" type="text/css">
-  <link rel="stylesheet" href="{{ '/assets/css/stylesheet.css' | relative_url }}" type="text/css">
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
 
-</head>
+<!-- For all browsers -->
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+{% if site.head_scripts %}
+  {% for script in site.head_scripts %}
+    <script src="{{ script | relative_url }}"></script>
+  {% endfor %}
+{% endif %}
